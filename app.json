@@ -1,0 +1,35 @@
+{
+  "name": "watched-source-github",
+  "version": "0.1.0",
+  "displayName": "Watched Source Github",
+  "description": "A PersonalClaw trigger_source provider.",
+  "icon": "Blocks",
+  "license": "MIT",
+  "tags": [
+    "trigger_source"
+  ],
+  "cli": {
+    "setup": "app_cli:setup",
+    "doctor": "app_cli:doctor"
+  },
+  "loggerRoots": [
+    "watched_source_github"
+  ],
+  "provider": {
+    "type": "trigger_source",
+    "implementation": "provider:create_provider",
+    "settingsSchema": {
+      "type": "object",
+      "properties": {
+        "timeout_secs": {
+          "type": "integer",
+          "default": 20,
+          "x-meta": {
+            "label": "Request timeout",
+            "help": "Seconds this provider waits before giving up."
+          }
+        }
+      }
+    }
+  }
+}
