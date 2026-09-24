@@ -1,8 +1,8 @@
 {
   "name": "watched-source-github",
   "version": "0.1.0",
-  "displayName": "Watched Source Github",
-  "description": "A PersonalClaw trigger_source provider.",
+  "displayName": "GitHub Repo Watcher",
+  "description": "Watch GitHub repositories and emit new_release and new_issue events your triggers can bind to. Stdlib-only; a freshly-watched repo plants a high-water mark instead of replaying its history.",
   "icon": "Blocks",
   "license": "MIT",
   "tags": [
